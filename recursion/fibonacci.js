@@ -29,11 +29,7 @@ function fib(n) {
   if (n <= 2) {
     return 1;
   }
-console.log(n);
+
   return fib(n-2) + fib(n-1);
 }
-fib(6);
 module.exports = fib;
-//fib(4) +                                         fib (5);
-// fib(2)  +     fib(3)                         fib(3) +     fib(4)
-//return 1      fib(1) + fib(2)
