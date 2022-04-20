@@ -1,19 +1,8 @@
 //write a function that reverses a string using recursion;
-function reverse(string) {
-  let reversedString = "";
+function reverse(str){
+	if(str.length <= 1) return str;
 
-  function reverseHelper(helperString) {
-    if (helperString <= 0) {
-      return;
-    }
-
-    reversedString += helperString[helperString.length - 1];
-    helperString = helperString.slice(0,-1);
-
-    reverseHelper(helperString);
-  }
-  reverseHelper(string)
-  return reversedString;
+	return reverse(str.slice(1)) + str[0 ];
 }
 
 module.exports = reverse;
