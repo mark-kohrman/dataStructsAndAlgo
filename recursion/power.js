@@ -4,6 +4,6 @@ function power(base, exponent) {
   }
 
   return base * power(base, exponent -1);
- }
+}
 var pow = power(4, 3);
 console.log(pow);
